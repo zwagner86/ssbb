@@ -934,7 +934,7 @@
 
 	#header {
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
-		@include dark(#4686a0);
+		@include dark(#405F30);
 		background-attachment:	fixed,							fixed,							fixed;
 		background:				linear-gradient(45deg, #69995D 5%, #405F30 30%, #132A13);
 		background-position:	top left,						center center,					center center;
@@ -984,7 +984,7 @@
 
 		&:after {
 			@include vendor('transition', 'opacity 1s ease');
-			background-image: linear-gradient(45deg, _palette(accent3-alt), _palette(accent6-alt));
+			background-image: linear-gradient(45deg, #69995D, #405F30);
 			content: '';
 			height: 100%;
 			left: 0;
@@ -1017,7 +1017,7 @@
 
 	#footer {
 		@include padding(6em, 0, (0,0,_size(element-margin),0));
-		@include dark(#4686a0);
+		@include dark(#405F30);
 		background-attachment:	fixed,							fixed,							fixed;
 		background:				linear-gradient(45deg, #69995D 5%, #405F30 30%, #132A13);
 		background-position:	top left,						center center,					center center;
