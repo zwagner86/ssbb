@@ -25,16 +25,23 @@ class Template extends React.Component {
     }
 
     render() {
-        const { children } = this.props;
+        const {
+          children,
+          isIndexPage
+        } = this.props;
 
         return (
             <div className={`body ${this.state.loading}`}>
-                <Header />
+                <Header isIndexPage={isIndexPage} />
                 {children}
                 <Footer />
             </div>
         );
     }
+}
+
+Template.defaultProps = {
+  isIndexPage: true
 }
 
 export default Template;
